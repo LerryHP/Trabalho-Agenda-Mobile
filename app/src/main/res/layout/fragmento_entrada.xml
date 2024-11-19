@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fragment_container"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOVO COMPROMISSO"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:gravity="start"
+        android:paddingBottom="16dp"
+        android:paddingTop="4dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/dataSelecionadaText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:backgroundTint="@color/textColor"
+            android:padding="8dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/black" />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/horaSelecionadaText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:backgroundTint="@color/textColor"
+            android:padding="8dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/botaoData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Data"
+            android:backgroundTint="@color/buttonColor" />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/botaoHora"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hora"
+            android:backgroundTint="@color/buttonColor" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/descricaoCompromisso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição do Compromisso"
+        android:padding="8dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:backgroundTint="@color/textColor" />
+
+    <Button
+        android:id="@+id/botaoOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/buttonColor"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
