@@ -1,4 +1,4 @@
-package com.example.agendamobile;
+package com.example.minhaagenda;
 
 import org.junit.Test;
 

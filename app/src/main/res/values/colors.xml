@@ -6,10 +6,14 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#C4C4C4</color>
     <color name="buttonColor">#9E8D37</color>
-    <color name="textColor">#F8F8F2</color>
+    <color name="textColor">#000000</color>
     <color name="background">#D64017</color>
     <color name="mainContainer">#D1882D</color>
     <color name="detailContainer">#82B81D</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+    <color name="fully_transparent">#00000000</color>
 </resources>

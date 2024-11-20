@@ -10,94 +10,81 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NOVO COMPROMISSO"
+        android:text="Adicionar Novo Compromisso"
         android:textColor="@color/textColor"
         android:textSize="16sp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:gravity="start"
-        android:paddingBottom="16dp"
-        android:paddingTop="4dp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="16dp"
+        android:weightSum="2">
 
-        <EditText
-            android:id="@+id/dataSelecionadaText"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:focusable="false"
-            android:backgroundTint="@color/textColor"
-            android:padding="8dp"
-            android:textColor="@color/textColor"
-            android:textColorHint="@color/black" />
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp">
 
-        <Space
-            android:layout_width="16dp"
-            android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/dataSelecionadaText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="__/__/____"
+                android:background="@drawable/form_background"
+                android:padding="8dp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray" />
 
-        <EditText
-            android:id="@+id/horaSelecionadaText"
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:focusable="false"
-            android:backgroundTint="@color/textColor"
-            android:padding="8dp"
-            android:textColor="@color/textColor"
-            android:textColorHint="@color/black" />
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/horaSelecionadaText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="__:__"
+                android:background="@drawable/form_background"
+                android:padding="8dp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginBottom="8dp">
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
 
-        <Button
-            android:id="@+id/botaoData"
-            android:layout_width="0dp"
+        <EditText
+            android:id="@+id/descricaoCompromisso"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Data"
-            android:backgroundTint="@color/buttonColor" />
-
-        <Space
-            android:layout_width="16dp"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/botaoHora"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Hora"
-            android:backgroundTint="@color/buttonColor" />
+            android:background="@drawable/form_background"
+            android:padding="8dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/gray"
+            android:hint="Descrição do Compromisso" />
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/descricaoCompromisso"
+    <Button
+        android:id="@+id/botaoSalvar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Descrição do Compromisso"
-        android:padding="8dp"
-        android:textColor="@color/textColor"
-        android:textColorHint="@color/textColor"
-        android:backgroundTint="@color/textColor" />
-
-    <Button
-        android:id="@+id/botaoOk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ok"
-        android:layout_gravity="center"
+        android:text="Salvar"
         android:backgroundTint="@color/buttonColor"
-        android:layout_marginTop="8dp" />
-
+        android:textColor="@color/white" />
 </LinearLayout>
