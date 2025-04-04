@@ -1,6 +1,6 @@
 # 🗓️ Trabalho Agenda Mobile
 
-Aplicativo mobile desenvolvido como parte da disciplina de **Desenvolvimento Mobile** na **PUC Minas – Poços de Caldas**.  
+Aplicativo mobile desenvolvido como parte da disciplina de **Engenharia de Aplicações moveis** na **PUC Minas – Poços de Caldas**.  
 O projeto tem como objetivo permitir o gerenciamento de tarefas de forma simples e prática.
 
 ---
